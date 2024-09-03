@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Simple Webpage</title>
+    <link rel="stylesheet" href="right.css">
+</head>
+<body>
+    <header>
+        <div class="center-block">
+        <p>CodeCrafters Inc.</p>
+    </header>
+    <nav class="center-nav">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="services.html">Services</a>
+    </nav>
+    <main>      
+
+    <form action="submit_form.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="file-input">
+                <img src="IMG_E2164.JPG" width="250px" alt="female image on screen" id="image-preview">
+            </label>
+            <input type="file" id="file-input" name="image" accept="image/*" style="display: none;" onchange="previewImage(event)">
+            <br>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required><br>
+            
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required><br>
+            
+            <label for="phone_number">Phone Number:</label>
+            <input type="tel" id="phone_number" name="phone_number" required><br>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Additional Information</legend>
+            <h4>Select your gender</h4>
+            <input type="radio" id="male" name="sex" value="male">
+            <label for="male">Male</label><br>
+            
+            <input type="radio" id="female" name="sex" value="female">
+            <label for="female">Female</label><br>
+            
+            <input type="radio" id="other" name="sex" value="other">
+            <label for="other">Other</label><br>
+            
+            <input type="radio" id="rather_not_say" name="sex" value="rather_not_say">
+            <label for="rather_not_say">Rather not say</label><br>
+            
+            <h4>Date of Birth</h4>
+            <input type="date" id="dob" name="dob" required><br>
+            
+            <h4>COURSES</h4>
+            <select id="COURSES" name="COURSE" required>
+                <option value="">Select Course</option>
+                <option value="2020">WEB DEVELOPMENT</option>
+                <option value="2021">DATA SCIENCE</option>
+                <option value="2022">CYBER SECURITY</option>
+                <option value="2023">SOFTWARE DEVELOPMENT</option>
+                <option value="2024">NETWORKING AND COMPUTER SECURITY</option>
+            </select><br>
+            <div class="register-button">
+                <a href="ai.html" <button type="submit" class="button">Submit</button></a>
+            </div>
+        </fieldset>   
+    </form>
+</main>
+    <footer>
+        <p>© 2024 CodeCrafters Inc. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+

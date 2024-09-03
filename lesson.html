@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Simple Webpage</title>
+    <link rel="stylesheet" href="lesson.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://th.bing.com/th/id/OIG1.2MR_RU0vLpXD_F8iXs.Z?pid=ImgGn" alt="Logo" class="logo">
+        <h1>CodeCrafters Inc.</h1>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <em>Enable Dark/Light Mode!</em>
+        </div>
+    </header>
+    <nav class="center-nav">
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="services.html">Services</a>
+    </nav>
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" placeholder="Search.." name="q">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2>About This Page</h2>
+            <p>This is an enhanced HTML webpage designed for learning purposes. It includes basic HTML and CSS to create a clean and engaging layout.</p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="https://th.bing.com/th/id/OIG1.efmA_3L89TjAXcU8KRtp?pid=ImgGn" alt="Image 1" class="responsive-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://th.bing.com/th/id/OIG4.RliFPPgbxAlH1J0.IkYJ?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Image 2" class="responsive-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://th.bing.com/th/id/OIG4.8TWJNQriaDaBDd4tkm2o?pid=ImgGn" alt="Image 3" class="responsive-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://th.bing.com/th/id/OIG3.8CZUy9yhLcyZdFGVW0dh?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Image 4" class="responsive-image">
+                </div>
+            </div>
+            <h2>Contact</h2>
+            <p>If you have any questions, feel free to reach out via the contact page.</p>
+            <a href="register.html" class="button">Start Learning</a>
+        </div>
+    </div>
+    <div class="social-buttons">
+        <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+        <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+        <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+        <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+    </div>
+    <!-- Cookie Consent Popup -->
+<div id="cookieConsent">
+    <div class="cookie-container">
+        <p>We use cookies to ensure you get the best experience on our website. <a href="#">Learn more</a></p>
+        <button id="acceptCookies">Accept</button>
+        <button id="declineCookies">Decline</button>
+    </div>
+</div>
+</div<div id="chatbot">
+    <button id="chatbotBtn"></button>
+    <div id="chatWindow" style="display:none;">
+        <div id="chatHeader">
+            <span id="closeChat">×</span>
+            <h2>Support Chat</h2>
+        </div>
+        <div id="chatBody">
+            <!-- Chat messages will appear here -->
+        </div>
+        <input type="text" id="chatInput" placeholder="Type your message...">
+        <button id="sendBtn">Send</button>
+    </div>
+</div>
+<div id="chatbot">
+    <img src="https://th.bing.com/th/id/OIG2.zCquLFGDgFG93t1a.ciG?pid=ImgGn" alt="Chat with us" id="chatbotIcon">
+    <div id="chatWindow" style="display:none;">
+        <div id="chatHeader">
+            <span id="closeChat">×</span>
+            <h2>Support Chat</h2>
+        </div>
+        <div id="chatBody">
+            <!-- Chat messages will appear here -->
+        </div>
+        <input type="text" id="chatInput" placeholder="Type your message...">
+        <button id="sendBtn">Send</button>
+    </div>
+</div>
+
+    <footer>
+        <p>© 2024 Enhanced Webpage. All rights reserved.</p>
+    </footer>
+    <script src="lesson.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+body{
+    background-color: #080808;
+    text-decoration: underline;
+    text-transform: capitalize;
+    padding: 0 30px;
+    cursor: pointer;
+    color:white;
+    border-radius: 5px;
+}
+a{
+    text-decoration: blue;
+    text-decoration-style:wavy;
+    color: white;
+    padding: 10px;
+}
+img{
+    height: 90px;
+    width: 90px;
+    border: 3px solid blue;
+    border-radius: 70%;
+    float: left;
+    margin-right: 10px;
+}
