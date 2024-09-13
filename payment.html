@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Simple Webpage</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <img src="https://th.bing.com/th/id/OIG1.2MR_RU0vLpXD_F8iXs.Z?pid=ImgGn" alt="Logo" class="logo">
+        <h1>CodeCrafters Inc.</h1>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+            <em>Enable Dark/Light Mode!</em>
+        </div>
+    </header>
+    <nav aria-label="Main Navigation">
+        <a href="home.html" aria-label="Home">Home</a>
+        <a href="about.html" aria-label="About">About</a>
+        <a href="contact.html" aria-label="Contact">Contact</a>
+        <a href="services.html" aria-label="Services">Services</a>
+    </nav>
+    <div class="search-container">
+        <form action="https://www.google.com/search" method="GET">
+            <input type="text" placeholder="Search.." name="q">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <div class="container">
+        <div class="main-content">
+            <h2>About This Page</h2>
+            <p>This is an enhanced HTML webpage designed for learning purposes. It includes basic HTML and CSS to create a clean and engaging layout.</p>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="https://th.bing.com/th/id/OIG1.efmA_3L89TjAXcU8KRtp?pid=ImgGn" alt="Image 1" class="responsive-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://th.bing.com/th/id/OIG4.RliFPPgbxAlH1J0.IkYJ?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Image 2" class="responsive-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://th.bing.com/th/id/OIG4.8TWJNQriaDaBDd4tkm2o?pid=ImgGn" alt="Image 3" class="responsive-image">
+                </div>
+                <div class="mySlides fade">
+                    <img src="https://th.bing.com/th/id/OIG3.8CZUy9yhLcyZdFGVW0dh?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="Image 4" class="responsive-image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="chatbot">
+    <img src="https://th.bing.com/th/id/OIG2.zCquLFGDgFG93t1a.ciG?pid=ImgGn" alt="Chat with us" id="chatbotIcon">
+    <div id="chatWindow" style="display:none;">
+        <div id="chatHeader">
+            <span id="closeChat">×</span>
+            <h2>Support Chat</h2>
+        </div>
+        <div id="chatBody">
+            <!-- Chat messages will appear here -->
+        </div>
+        <input type="text" id="chatInput" placeholder="Type your message...">
+        <button id="sendBtn">Send</button>
+    </div>
+</div>
+</div>
+    <!-- Premium Card Popup -->
+    <button class="close-button" onclick="closePopup()">X</button>
+    <div id="premiumPopup" class="premium-container">
+        <div class="premium-card">
+            <h2>Weekly Plan</h2>
+            <div class="premium-details">
+                <p><strong>1 TB Bandwidth</strong></p>
+                <p><strong>1 TB Storage</strong></p>
+                <p>for 7 days</p>
+                <p class="price">9.99 USD</p>
+                <p class="offer">Free 200% included!</p>
+                <button class="pay-button">Pay</button>
+            </div>
+        </div>
+        <div class="premium-card">
+            <h2>Monthly Plan</h2>
+            <div class="premium-details">
+                <p><strong>1 TB Bandwidth</strong></p>
+                <p><strong>1 TB Storage</strong></p>
+                <p>for 30 days</p>
+                <p class="price">29.99 USD</p>
+                <p class="offer">Free 200% included!</p>
+                <button class="pay-button">Pay</button>
+            </div>
+        </div>
+        <div class="premium-card">
+            <h2>Yearly Plan</h2>
+            <div class="premium-details">
+                <p><strong>1 TB Bandwidth</strong></p>
+                <p><strong>1 TB Storage</strong></p>
+                <p>for 365 days</p>
+                <p class="price">99.99 USD</p>
+                <p class="offer">Free 200% included!</p>
+                <button class="pay-button">Pay</button>
+            </div>
+        </div>
+    </div>
+</body>    
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <button class="faq-question">What is CodeCrafters Inc.?</button>
+            <div class="faq-answer">
+                <p>CodeCrafters Inc. is a company dedicated to providing top-notch coding education and resources.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">How can I start learning?</button>
+            <div class="faq-answer">
+                <p>You can start learning by signing up for our courses and accessing our resources.</p>
+            </div>
+        </div>
+        <div class="faq-item">
+            <button class="faq-question">What are the benefits of a premium plan?</button>
+            <div class="faq-answer">
+                <p>Our premium plans offer additional resources, personalized support, and exclusive content.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <!-- Newsletter Subscription Form -->
+    <section id="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="newsletterForm">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+        <div class="social-buttons">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+        </div>
+    <p>© 2024 Enhanced Webpage. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
